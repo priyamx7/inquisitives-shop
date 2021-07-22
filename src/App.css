@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #F7941E;
+    --primary-lightcolor: #f1f7ff;
+    --primary-black: #000000;
+    --primary-white: #ffffff;
+    --primary-offwhite: #fafafa;
+    --primary-ligthgrey: #c1c1c1;
+    --primary-green: #03a685;
+    --primary-yellow: #f9ca24;
+    --primary-lightyellow: #fff8dd;
+    --primary-red: #e63946;
+    --primary-lightred: #ffe8e8;
+    --primary-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.8rem;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    border: none;
+}
+
+.container {
+    max-width: 80%;
+}
+
+/* alert */
+
+.alert {
+    width: fit-content;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.alertMessage {
+    margin-left: 0.4rem;
+}
+
+.alertError {
+    color: var(--primary-red);
+    background-color: var(--primary-lightred);
+}
+
+.alertWarning {
+    color: var(--primary-yellow);
+    background-color: var(--primary-lightyellow);
+}
+
+.alertPrimary {
+    color: var(--primary-color);
+    background-color: var(--primary-lightcolor);
+}
+
+/* buttons */
+
+.btn {
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: 0.13rem solid var(--primary-color);
+    background-color: var(--primary-white);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btnPrimary {
+    background-color: var(--primary-color);
+    color: var(--primary-white);
+}
+
+.btnIcon {
+    border-radius: 3rem;
+}
+
+.btnIconFloating {
+    background-color: var(--primary-color);
+    border-radius: 3rem;
+    box-shadow: var(--primary-boxshadow);
+}
+
+/* responsive image */
+
+.responsiveImg {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+/* card */
+
+.card {
+    width: 17rem;
+    box-shadow: var(--primary-boxshadow);
+    padding: 1rem;
+    margin: 1rem 1.5rem;
+}
+
+.cardImg {
+    width: 17rem;
+    height: 15rem;
+}
+
+.cardButtons {
+    padding: 1rem 0 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleAndCtaBtn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
+.productTitle {
+    font-weight: bold;
+}
+
+.iconsInProductCard {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.priceAndDetails {
+    margin-top: 0.3rem;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.cutPrice {
+    font-size: 0.95rem;
+    color: var(--primary-ligthgrey);
+    padding: 0rem 0.5rem;
+    text-decoration: line-through;
+}
+
+.discount {
+    color: var(--primary-color);
+}
+
+.inclusiveOfAllTaxes {
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.cardWithBadge {
+    position: relative;
+}
+
+/* containers */
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+    justify-content: center;
+}
+
+.filtersContainer {
+    margin: 0 7rem;
+}
+
+.categoryFilters {
+    margin: 1rem;
+}
+
+.filter {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 8rem;
+}
+
+.filterHeadingButton {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+.filterHeading {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.otherFilters {
+    margin: 1rem;
+}
+
+.filterName {
+    margin: 0.3rem;
+}
+
+.filterBtn {
+    margin: 0 1rem;
+}
+
+.wishlistContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartContainer {
+    display: flex;
+    justify-content: left;
+}
+
+.cartPageDiv {
+    display: flex;
+}
+
+.cartDetailsDiv {
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 25rem;
+    box-shadow: var(--primary-boxshadow);
+    border-radius: 1rem;
+    height: fit-content;
+}
+
+.checkoutCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutCardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.checkoutCardDetails {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.lineElement {
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    width: 25rem;
+    height: 0.2rem;
+    border-radius: 10rem;
+}
+
+/* horizontal card */
+
+.horizontalProductCard {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--primary-boxshadow);
+}
+
+.horizontalProductImage {
+    width: 13rem;
+    border-radius: 1rem;;
+}
+
+.quantityAndPrice {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    padding: 0 0.5rem;
+}
+
+.priceHorizontalCard {
+    padding: 0 0.5rem;
+}
+
+/* inputs */
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.inputWarning {
+    border: 0.1rem solid var(--primary-yellow);
+    background-color: var(--primary-lightyellow);
+}
+
+.inputError {
+    border: 0.1rem solid var(--primary-red);
+    background-color: var(--primary-lightred);
+}
+
+/* avatar badges */
+
+.avatarBadges {
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatarBadge {
+    position: relative;
+}
+
+.status {
+    border: 1px solid var(--primary-white);
+    border-radius: 100%;
+    padding: 0.2rem 0.25rem;
+    font-size: 4px;
+    color: hotpink;
+    background-color: hotpink
+}
+
+.statusActive {
+    background-color: var(--primary-green);
+    color: var(--primary-green);
+    position: absolute;
+    top: 0.5rem;
+    left: 3.2rem;
+}
+
+.statusWarning {
+    background-color: var(--primary-yellow);
+    color: var(--primary-yellow);
+    position: absolute;
+    top: 0.3rem;
+    left: 2.5rem;
+}
+
+.statusOffline {
+    background-color: var(--primary-ligthgrey);
+    color: var(--primary-ligthgrey);
+    position: absolute;
+    top: 0.1rem;
+    left: 1.6rem;
+}
+
+/* Badge */
+
+.badge {
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    padding: 0.3rem;
+    font-size: 0.7rem;
+}
+
+/* Card Badge */
+
+.cardBadge {
+    background-color: var(--primary-red);
+    width: 4rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--primary-white);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+/* icon badges */
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+}
+
+.iconBadgeContainer {
+    position: relative;
+}
+
+.icon {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.iconNotification {
+    background-color: var(--primary-green);
+}
+
+.iconHeart {
+    background-color: var(--primary-red);
+}
+
+.iconCart {
+    background-color: var(--primary-yellow);
+}
+
+.iconBadge {
+    position: absolute;
+    left: 2.3rem;
+    bottom: 0.7rem;
+}
+
+/* toast */
+
+.toasts {
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.toast {
+    display: flex;
+    box-shadow: var(--primary-boxshadow);
+}
+
+.simpleToast {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    /* background-color: var(--primary-yellow); */
+}
+
+.toastBlock {
+    max-width: fit-content;
+    padding: 0.5rem 0;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.toastMessage {
+    padding: 0.5rem;
+    /* background-color: var(--primary-ligthgrey); */
+}
+
+/* desktop navigation */
+
+.navBar {
+    width: 97.4%;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-lightcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 10px 27px rgb(0 0 0 / 5%);
+}
+
+.navLogoAndTitle {
+    margin-left: 7rem;
+}
+
+.navOptions {
+    margin-right: 5rem;
+}
+
+.navOption {
+    margin-right: 2rem;
+    color: var(--primary-color);
+    /* padding: 2rem; */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logoImg {
+    height: 3rem;
+    width: 13rem;
+}
+
+/* modal */
+
+.modal {
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--primary-boxshadow);
+}
+
+.modalTitle {
+    font-weight: bold;
+}
+
+.modalMessage {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* ratings */
+
+.ratings {
+    display: flex;
+}
+
+.rating {
+    margin: 0.2rem;
+}
+
+.ratingYellow {
+    color: var(--primary-yellow);
+}
+
+.ratingGrey {
+    color: var(--primary-ligthgrey);
+}
+
+.ratingsBadge {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    width: fit-content;
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
