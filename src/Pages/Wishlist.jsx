@@ -20,6 +20,7 @@ export const Wishlist = () => {
                     </div>
                     <div class="descriptionAndPrice">
                         <p>{wishlistItem.name}</p>
+                        <p>Language: {wishlistItem.language}</p>
                         <p class="priceAndDetails">
                             <span class="price">Rs. {discountCalculator(wishlistItem.discount, wishlistItem.price)}</span>
                             <span class="cutPrice">Rs. {wishlistItem.price}</span>

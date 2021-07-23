@@ -22,6 +22,7 @@ const Cart = () => {
                     </div>
                     <div class="descriptionAndPrice">
                         <p>{cartItem.instructor}</p>
+                        <p>Language: {cartItem.language}</p>
                         <p class="priceAndDetails">
                             <span class="price">Rs. {discountCalculator(cartItem.discount, cartItem.price)}</span>
                             <span class="cutPrice">Rs. {cartItem.price}</span>

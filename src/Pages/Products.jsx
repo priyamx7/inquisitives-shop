@@ -133,6 +133,7 @@ const ProductPage = () => {
                             </div>
                             <div class="descriptionAndPrice">
                                 <p>{product.instructor}</p>
+                                <p>Language: {product.language}</p>
                                 <p class="priceAndDetails">
                                     <span class="price">Rs. {discountCalculator(product.discount, product.price)}</span>
                                     <span class="cutPrice">Rs. {product.price}</span>

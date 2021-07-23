@@ -22,7 +22,7 @@ export const products = [
         discount: 10,
         instructor: "codeStackr - Jesse Hall",
         category: "programming",
-        description: "VScode course by codeStackr",
+        language: "English",
         trending: false,
         lifeTimeAccess: true
     },
@@ -34,7 +34,7 @@ export const products = [
         discount: 80,
         instructor: "Rajeev Mehta",
         category: "design",
-        description: "Graphic Design Course",
+        language: "Hindi",
         trending: false,
         lifeTimeAccess: true
     },
@@ -46,7 +46,7 @@ export const products = [
         discount: 40,
         instructor: "CA Rachana Ranade",
         category: "finance",
-        description: "Technical Analysis Course by CARR",
+        language: "English",
         trending: false,
         lifeTimeAccess: false
     },
@@ -58,7 +58,7 @@ export const products = [
         discount: 30,
         instructor: "CA Rachana Ranade",
         category: "finance",
-        description: "FA course by CARR",
+        language: "English",
         trending: false,
         lifeTimeAccess: false
     },
@@ -70,7 +70,7 @@ export const products = [
         discount: 50,
         instructor: "Prakhar Gupta",
         category: "personalDevelopment",
-        description: "ArtOfConvo course by PG",
+        language: "Hinglish",
         trending: true,
         lifeTimeAccess: false
     },
@@ -82,7 +82,7 @@ export const products = [
         discount: 85,
         instructor: "Ankur Warikoo",
         category: "business",
-        description: "How to start your own startup course by Warikoo",
+        language: "English",
         trending: true,
         lifeTimeAccess: true
     },
@@ -94,7 +94,7 @@ export const products = [
         discount: 10,
         instructor: "Jordan B. Peterson",
         category: "personalDevelopment",
-        description: "Process your past, present, and future with JBP",
+        language: "English",
         trending: false,
         lifeTimeAccess: true
     },
@@ -106,7 +106,7 @@ export const products = [
         discount: 60,
         instructor: "CA Neeraj Arora",
         category: "finance",
-        description: "All about mutual fiunds by CA Neeraj Arora",
+        language: "Hinglish",
         trending: false,
         lifeTimeAccess: false
     },
@@ -118,7 +118,7 @@ export const products = [
         discount: 10,
         instructor: "Vaibhav Sisinty",
         category: "marketing",
-        description: "VScode course by codeStackr",
+        language: "English",
         trending: true,
         lifeTimeAccess: true
     },
@@ -130,7 +130,7 @@ export const products = [
         discount: 20,
         instructor: "CA Rachana Ranade",
         category: "finance",
-        description: "Personal finance course by CARR",
+        language: "English",
         trending: true,
         lifeTimeAccess: false
     },
@@ -142,7 +142,7 @@ export const products = [
         discount: 73,
         instructor: "Ankur Warikoo",
         category: "personalDevelopment",
-        description: "Time management course by Warikoo",
+        language: "English",
         trending: false,
         lifeTimeAccess: true
     },
@@ -154,7 +154,7 @@ export const products = [
         discount: 60,
         instructor: "CA Neeraj Arora",
         category: "finance",
-        description: "Basic Stock Market course by CA Neeraj Arora",
+        language: "Hinglish",
         trending: false,
         lifeTimeAccess: false
     },
@@ -166,7 +166,7 @@ export const products = [
         discount: 20,
         instructor: "Irfan Junejo",
         category: "photographyAndVideo",
-        description: "How to click pictures like Irfan Junejo",
+        language: "Hinglish",
         trending: false,
         lifeTimeAccess: true
     },

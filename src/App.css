@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
 
-/* containers */
+/* stuff added on top of component library */
 
 .productsContainer {
     display: flex;
