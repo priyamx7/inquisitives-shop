@@ -111,7 +111,7 @@ export const products = [
         lifeTimeAccess: false
     },
     {
-        _id: "1235",
+        _id: "1241",
         name: "Linkedin Masterclass",
         image: linkedinmasterclass,
         price: 25000,

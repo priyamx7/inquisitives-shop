@@ -4,10 +4,12 @@ import { discountCalculator } from "../utils/functions"
 
 const Cart = () => {
     const { state, dispatch } = useApp();
-    const cartPrices = state.cart.map(item => parseInt(discountCalculator(item.discount, item.price)) * item.quantity)
+    const cartPrices = state.cart.map(item => parseInt(discountCalculator(item.discount, item.price), 10))
     const cartTotal = cartPrices.reduce((curr, acc) => curr + acc, 0)
     return (
-        <div className="cartPageDiv">
+        <div>
+            {state.cart.length < 1 ? <h2 className="emptyMsg">Cart is empty</h2> :
+            <div className="cartPageDiv">
             <div className="productsContainer cartContainer">
             {state.cart.map(cartItem => {
                 return (
@@ -67,6 +69,9 @@ const Cart = () => {
                         <button className="btn btnPrimary">Checkout</button>
             </div>
         </div>
+            }
+        </div>
+        
     )
 }
 

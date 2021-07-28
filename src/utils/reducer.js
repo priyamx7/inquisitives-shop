@@ -12,7 +12,7 @@ export const reducer = (state, action) => {
             return { ...state, wishlist: [...state.wishlist, action.payload] };
 
         case "ADD_TO_CART":
-            return { ...state, cart: [...state.cart, { ...action.payload, quantity: 1 }] };
+            return { ...state, cart: [...state.cart, { ...action.payload }] };
 
         case "REMOVE_FROM_WISHLIST":
             return { ...state, wishlist: state.wishlist.filter(item => item._id !== action.payload._id) };
@@ -21,7 +21,6 @@ export const reducer = (state, action) => {
             return { ...state, cart: state.cart.filter(item => item._id !== action.payload._id) };
 
             case 'SET_CATEGORY':
-                console.log(action.payload)
                 return {...state, category: action.payload};
             case 'SET_TRENDING':
                 return {...state, trending: !state.trending};

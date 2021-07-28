@@ -220,6 +220,10 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
 }
 
+.emptyMsg {
+    text-align: center;
+}
+
 .cartContainer {
     display: flex;
     justify-content: left;
@@ -227,10 +231,11 @@ body::-webkit-scrollbar-thumb {
 
 .cartPageDiv {
     display: flex;
+    justify-content: space-between;
 }
 
 .cartDetailsDiv {
-    margin: 2rem 0;
+    margin: 2rem 2rem 0 0;
     padding: 1rem;
     max-width: 25rem;
     box-shadow: var(--primary-boxshadow);
@@ -453,7 +458,7 @@ body::-webkit-scrollbar-thumb {
 /* desktop navigation */
 
 .navBar {
-    width: 97.4%;
+    width: auto;
     padding: 0.5rem 1rem;
     background-color: var(--primary-lightcolor);
     display: flex;

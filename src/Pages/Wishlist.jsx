@@ -4,10 +4,10 @@ import { useApp } from "../contexts/AppContext"
 
 export const Wishlist = () => {
     const { state, dispatch } = useApp();
-    console.log(state, "wishlist");
     return (
         <div className="wishlistContainer">
-            {state.wishlist.map(wishlistItem => {
+            {state.wishlist.length < 1 ? <h2>Wishlist is empty</h2> : 
+            state.wishlist.map(wishlistItem => {
                 return (
                 <div class="card">
                     <div class="cardImgDiv">
@@ -35,7 +35,8 @@ export const Wishlist = () => {
                             <button className="btn btnLink" onClick={() => dispatch({ type: "REMOVE_FROM_WISHLIST", payload: wishlistItem })}>Remove</button>
                     </div>
                 </div>)
-            })}
+            })
+            }
         </div>
     )
 }
